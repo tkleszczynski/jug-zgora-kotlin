@@ -3,12 +3,9 @@ fun up(arg: String): String = arg.toUpperCase()
 fun main(args: Array<String>) {
     val countries = listOf("Poland", "Germany", "France", "Italy")
 
-    // function getting String and returning String
     val toUpperCase: (String) -> String = ::up
 
     println(countries.map { element: String -> up(element) })
-
-    println(countries.map { it -> up(it) })
 
     println(countries.map { toUpperCase.invoke(it) })
 
@@ -16,6 +13,7 @@ fun main(args: Array<String>) {
 
     println(countries.map { toUpperCase })
 
+    // closures
     var count = 0
     countries.forEach { count += it.length }
     println(count)
@@ -23,6 +21,5 @@ fun main(args: Array<String>) {
     countries.map { print("$it "); if (it == "Germany") return  }
 
     countries.map mapping@ { print(it); if (it == "Germany") return@mapping }
-
     countries.map { print(it); if (it == "Germany") return@map  }
 }

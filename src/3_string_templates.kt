@@ -1,6 +1,6 @@
 fun main(args: Array<String>) {
 
-    val name = "JUG Zielona Góra!"
+    val name = "JDD 2017!"
     val message = "Hello: $name"
     print(message)
 

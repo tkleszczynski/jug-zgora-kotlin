@@ -9,7 +9,6 @@ val Int.bd : BigDecimal
 
 fun String.reverse() = StringBuilder(this).reverse().toString()
 
-
 fun main(args: Array<String>) {
     print(1.bd + 2.toBigDecimal())
 

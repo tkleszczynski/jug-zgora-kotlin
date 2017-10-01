@@ -18,7 +18,7 @@ fun smartCasts(arg: Any?) {
 fun main(args: Array<String>) {
 
     smartFun(1)
-    smartFun("JUG Zielona Góra")
+    smartFun("JDD 2017")
     smartFun(intArrayOf(1, 2, 3, 4, 5))
 
     val x : Int? = null
